@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "openai": "^3.2.1"
+  },
+  "name": "chat-gpt-cli",
+  "description": "Access ChatGPT through the Command Line",
+  "version": "1.0.0",
+  "main": "gpt.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node gpt.js How many cups in a gallon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tombyrn/chat-gpt-shell-.git"
+  },
+  "author": "Thomas Byrnes",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/tombyrn/chat-gpt-shell-/issues"
+  },
+  "homepage": "https://github.com/tombyrn/chat-gpt-shell-#readme",
+  "bin": {
+    "chat-gpt": "./chat-gpt.js"
+  }
+}
