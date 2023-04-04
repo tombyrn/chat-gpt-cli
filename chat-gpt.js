@@ -16,15 +16,15 @@ const openai = new OpenAIApi(configuration);
 
 async function generateText() {
     const response = await openai.createCompletion({
-        model: 'text-davinci-002',
+        model: 'text-davinci-003',
         prompt: prompt,
         temperature: 0,
-        max_tokens: 1000,
+        max_tokens: 1500,
     });
 
     if(response.data.choices[0].text){
         console.log('===================== Chat-GPT =====================')
-        console.log(response.data.choices[0].text)
+        console.log(response.data.choices[0].text.toString())
         console.log('\n')
     }
     else{
